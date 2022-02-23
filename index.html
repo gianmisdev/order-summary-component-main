@@ -5,33 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!--INTERNAL STYLESHEET-->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body
+    {
+      font-size: 16px;
+      font-family: 'Red Hat Display', sans-serif;
+      background-color: hsl(225, 100%, 94%);
+
+      border: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+    }
+
+    .card-itself
+    {
+      width: 50%;
+      height: 700px;
+      margin: auto;
+      border: 1px solid black;
+
+      border-radius: 20px;
+    }
+    .card-header
+    {
+      height: 220px;
+      background-image: url('images/illustration-hero.svg');
+      border-radius: 20px 20px 0px 0px;
+
+      margin: 0px;
+      padding: 0;
+    }
+    .card-body
+    {
+      background-color: white;
+      height: 460px;
+      border-radius: 0px 0px 20px 20px;
+    }
+    h2
+    {
+      text-align: center;
+    }
+    p
+    {
+      text-align: center;
+    }
+
+    #anual-plan
+    {
+      height: 100px;
+      width: 300px;
+      border: none;
+      margin: 0 auto;
+      border-radius: 20px;
+      background-color: hsl(225, 100%, 98%);
+    }
+    
+    #icon-music
+    {
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+    #title
+    {
+      position: relative;
+      left: 85px;
+      bottom: 50px;
+    }
+
+    #price
+    {
+      position: relative;
+      bottom: 70px;
+      right: 20px;
+    }
+    #change
+    {
+      position: relative;
+      left: 210px;
+      bottom: 120px;
+    }
+    .buttons
+    {
+      margin-top: 40px;
+      text-align: center;
+    }
+
   </style>
 </head>
 <body>
 
-  Order Summary
+  <div class="card-itself">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h2>Order Summary</h2>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <div id="anual-plan">
+          <!--MUSIC ICON-->
+          <img src="images/icon-music.svg" id="icon-music">
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <h4 id="title">Annual Plan</h4>
+          <p id="price">$59.99/year</p>
+          <a href="#" id="change">Change</a>
+        </div>
+        <div class="buttons">
+          <button>Proceed to Payment</button>
+          <br>
+          <button>Cancel Order</button>
+        </div>
+    </div>
   </div>
+  
+  
+
+  
+
+ 
+  
+
+  
+  
+  
+  
 </body>
 </html>
