@@ -16,20 +16,25 @@
     {
       font-size: 16px;
       font-family: 'Red Hat Display', sans-serif;
-      background-color: hsl(225, 100%, 94%);
-
+      background-image: url('images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-color: rgba(222, 230, 255, 0.864);
+      
       border: 0;
       margin: 0;
       box-sizing: border-box;
+
+      
 
     }
 
     .card-itself
     {
-      width: 50%;
+      width: 35%;
       height: 700px;
       margin: auto;
-      border: 1px solid black;
+      margin-top: 100px;
+      
 
       border-radius: 20px;
     }
@@ -47,6 +52,9 @@
       background-color: white;
       height: 460px;
       border-radius: 0px 0px 20px 20px;
+
+      padding: 11px;
+      
     }
     h2
     {
@@ -55,6 +63,7 @@
     p
     {
       text-align: center;
+      color: grey;
     }
 
     #anual-plan
@@ -91,24 +100,70 @@
       position: relative;
       left: 210px;
       bottom: 120px;
+      font-weight: bold;
+    }
+    #change:active
+    {
+      
+      color: rgb(89, 89, 225)
     }
     .buttons
     {
       margin-top: 40px;
       text-align: center;
+
+    }
+    #payment
+    {
+      width: 80%;
+      height: 45px;
+
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      background-color: rgb(56, 42, 223);
+      border: none;
+
+      box-shadow: 1px 6px rgb(236, 234, 237);
+
+    }
+    #payment:hover
+    {
+      cursor: pointer;
+    }
+    #payment:active
+    {
+      background-color: rgb(89, 78, 228);
+    }
+    #cancel
+    {
+      background-color: transparent;
+      color: gray;
+      border: none;
+      font-weight: bold;
+
+      margin-top: 40px;
+    }
+    #cancel:hover
+    {
+      cursor: pointer;
+    }
+    #cancel:active
+    {
+      color: black;
     }
 
   </style>
 </head>
 <body>
-
   <div class="card-itself">
     <div class="card-header">
     </div>
     <div class="card-body">
       <h2>Order Summary</h2>
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!</p>
+      <p>You can now listen to millions of songs, <br>
+        audiobooks, and podcasts on any device <br> 
+        anywhere you like!</p>
 
         <div id="anual-plan">
           <!--MUSIC ICON-->
@@ -119,23 +174,12 @@
           <a href="#" id="change">Change</a>
         </div>
         <div class="buttons">
-          <button>Proceed to Payment</button>
+          <button id="payment" type="button">Proceed to Payment</button>
           <br>
-          <button>Cancel Order</button>
+          <button id="cancel" type="button">Cancel Order</button>
         </div>
     </div>
   </div>
-  
-  
 
-  
-
- 
-  
-
-  
-  
-  
-  
 </body>
 </html>
